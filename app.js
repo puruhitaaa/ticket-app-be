@@ -290,8 +290,7 @@ app.get("/order-details/:id", (req, res) => {
 	});
 });
 // Add order
-app.post("/order-details/:id", (req, res) => {
-	const movie_id = req.params.id;
+app.post("/order-details", (_, res) => {
 	const id = orders.length + 1;
 	const order_date = new Date().toLocaleDateString();
 	const newOrder = {
