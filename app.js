@@ -295,7 +295,7 @@ app.post("/order-details", (req, res) => {
 	const order_date = new Date();
 	const newOrder = {
 		id,
-		movie_id: req.body,
+		movie_id: req.body.movie_id,
 		order_date,
 		status: "Waiting for payment",
 	};
