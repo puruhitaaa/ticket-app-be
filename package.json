@@ -1,0 +1,22 @@
+{
+	"name": "api-tiket",
+	"version": "1.0.0",
+	"description": "",
+	"main": "app.js",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"express": "^4.18.2",
+		"express-fileupload": "^1.4.3",
+		"joi": "^17.12.1"
+	},
+	"devDependencies": {
+		"nodemon": "^3.0.3"
+	},
+	"scripts": {
+		"start": "node app.js",
+		"dev": "nodemon app.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC"
+}
