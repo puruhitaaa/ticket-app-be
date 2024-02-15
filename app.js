@@ -290,12 +290,11 @@ app.get("/order-details/:id", (req, res) => {
 	});
 });
 // Add order
-app.post("/order-details", (_, res) => {
+app.post("/order-details", (req, res) => {
 	const id = orders.length + 1;
-	const order_date = new Date().toLocaleDateString();
 	const newOrder = {
 		id,
-		movie_id,
+		movie_id: req.body,
 		order_date,
 		status: "Waiting for payment",
 	};
