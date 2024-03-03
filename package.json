@@ -2,7 +2,7 @@
   "name": "ticket",
   "description": "This API provides a simple interface for managing and retrieving movie data and order information. It can be used to power a movie information website or application.",
   "version": "1.0.0",
-  "main": "api/index.js",
+  "main": "app.js",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.2",
@@ -13,8 +13,8 @@
     "nodemon": "^3.1.0"
   },
   "scripts": {
-    "start": "node api/index.js",
-    "dev": "nodemon api/index.js",
+    "start": "node app.js",
+    "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
